@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Row, Col } from 'antd';
-import { Character } from "../../types";
-import {InfoItem} from "../InfoItem";
+import { Character } from "../types";
+import {InfoItem} from "./InfoItem";
 
 interface CharacterCardProps {
     character: Character;
