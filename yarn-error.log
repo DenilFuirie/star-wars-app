@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\tsybe\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\rusm9\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\tsybe\bin\;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Users\rusm9\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\rusm9\AppData\Local\Programs\Python\Python312\;C:\Users\rusm9\AppData\Local\Programs\Python\Launcher\;C:\Users\rusm9\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\WebStorm 2021.3.1\bin;;C:\Users\rusm9\nvm;C:\Program Files\nodejs;C:\Users\rusm9\AppData\Roaming\npm;C:\Users\rusm9\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rusm9\go\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.8.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://nexus.dev.domoy.ru/repository/npm-fpp/@testing-library%2fjest-dom: Not found
+      at params.callback [as _callback] (C:\Users\tsybe\lib\cli.js:66145:18)
+      at self.callback (C:\Users\tsybe\lib\cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (C:\Users\tsybe\lib\cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at Gunzip.<anonymous> (C:\Users\tsybe\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at Gunzip.emit (node:events:514:28)
+      at endReadableNT (node:internal/streams/readable:1408:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "star-wars-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.17.0",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^13.5.0",
+      "@types/jest": "^27.5.2",
+      "@types/node": "^16.18.106",
+      "@types/react": "^18.3.4",
+      "@types/react-dom": "^18.3.0",
+      "axios": "^1.7.5",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-router-dom": "^6.26.1",
+      "react-scripts": "5.0.1",
+      "typescript": "^4.9.5",
+      "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
