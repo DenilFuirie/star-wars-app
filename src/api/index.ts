@@ -3,7 +3,10 @@ import axios from "axios";
 import {getIdFromUrl} from "../utils";
 
 export const getCharactersApi = async (filters: { page: number, searchTerm: string }): Promise<ResponseWithPagination<Character[]>> => {
-    const query = `?page=${filters.page}${filters.searchTerm ? '&search=' + filters.searchTerm : ''}`
+    const pageQuery = filters.page && !filters.searchTerm ? `page=${filters.page}` : '';
+    const searchQuery = filters.searchTerm ? `search=${filters.searchTerm}` : '';
+    const query = `?${pageQuery}&${searchQuery}`
+
     const res = await axios.get<ResponseWithPagination<Character[]>>(`https://swapi.dev/api/people${query}`);
 
     const resWithId = res.data.results.map((item) => {
